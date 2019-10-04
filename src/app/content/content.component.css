@@ -1,0 +1,147 @@
+
+
+
+
+#title{
+  position: relative;
+  padding-left: 7%;
+  padding-top: 5%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 38px;
+
+}
+
+.text-description{
+  position: relative;
+  padding-left: 7%;
+  padding-top: 3%;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 80%;
+
+}
+
+.content-2{
+  padding-left: 3%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  background-color: rgb(250, 255, 255);
+}
+
+
+#color-blue{
+  font-size: 100%;
+  color: rgb(60, 185, 185);
+}
+
+#light-color{
+  font-size: 80%;
+  color: rgb(147, 151, 151);
+
+}
+
+
+#special{
+  color: rgb(60, 185, 185);
+}
+
+#button0{
+  font-size: 80%;
+}
+
+#button1{
+  font-size: 80%;
+  width: 30%;
+}
+
+.card{
+  position: relative;
+  padding-left: 7%;
+  padding-top: 5%;
+  font-family: Arial, Helvetica, sans-serif;
+  border: none;
+}
+
+
+mat-card{
+  width: 90%;
+  background-color: rgb(253, 253, 253);
+}
+
+
+
+
+.header-image {
+  background-image: url('../../assets/sample.PNG');
+  background-size:cover;
+  width: 70px;
+  height: 70px;
+
+}
+
+.special-image {
+  background-color: rgb(60, 185, 185);
+  background-size:cover;
+  width: 70px;
+  height: 70px;
+
+}
+
+
+mat-card-content{
+  font-size: 17px;
+  color: rgb(147, 151, 151);
+}
+
+
+
+mat-card-subtitle{
+  font-size: 18px;
+  color: rgb(75, 73, 73);
+}
+
+
+
+
+
+.social{
+  text-align: center;
+  color: rgb(147, 151, 151);
+  font-size: 90%;
+
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: rgb(255, 255, 255);
+  color: rgb(187, 180, 180);
+  width: 5%;
+  font-size: 200%
+}
+
+.fa-twitter {
+  background: rgb(255, 255, 255);
+  color: rgb(187, 180, 180);
+  width: 5%;
+  font-size: 200%
+}
+
+
+
+.fa-linkedin {
+  background: rgb(255, 255, 255);
+  color: rgb(187, 180, 180);
+  width: 5%;
+  font-size: 200%
+}
+
+
+
+.fa-instagram {
+  background: rgb(255, 255, 255);
+  color: rgb(187, 180, 180);
+  width: 5%;
+  font-size: 200%
+}
