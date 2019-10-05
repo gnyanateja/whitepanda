@@ -5,13 +5,15 @@
       [opened]="!(isHandset$ | async)">
 
     <mat-nav-list>
-      <br><br><br><br>
-      <!-- <a href="#">
-          <span class="glyphicon glyphicon-th-large"></span>
-      </a> -->
-      <a mat-list-item href="#">Link 2</a>
-      <a mat-list-item href="#">Link 3</a>
+      <br><br><br>
+      <img id="active" src="../../assets/after.png" *ngIf="x==0" mat-list-item routerLink="/" routerLinkActive="active-list-item" (click)="x=0">
+      <img id="notactive" src="../../assets/before.png" *ngIf="x!=0" mat-list-item routerLink="/" (click)="x=0"><br>
+      <img id="active" src="../../assets/search(4).png" *ngIf="x==1" mat-list-item routerLink="/" routerLinkActive="active-list-item" (click)="x=1">
+      <img id="notactive" src="../../assets/search(3).png" *ngIf="x!=1" mat-list-item routerLink="/" (click)="x=1"><br>
+      <img id="active"  src="../../assets/house2.png"  *ngIf="x==2" mat-list-item routerLink="/" routerLinkActive="active-list-item" (click)="x=2">
+      <img id="notactive" src="../../assets/house1.png" *ngIf="x!=2" mat-list-item routerLink="/" (click)="x=2">
     </mat-nav-list>
+
   </mat-sidenav>
   <mat-sidenav-content>
     <mat-toolbar>
@@ -25,6 +27,14 @@
       </button>
 
       <img src="../../assets/white.PNG" >
+      <div id="icons">
+        <a id="bell" href="#" class="fa fa-bell"><span class="badge">699</span></a>
+        <a mat-card-avatar class="header-image">AB</a>
+      </div>
+
+
+
+
     </mat-toolbar>
     <!-- Add Content Here -->
       <app-content></app-content>

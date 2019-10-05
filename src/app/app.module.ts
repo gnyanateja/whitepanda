@@ -10,7 +10,7 @@ import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, Mat
 import { ContentComponent } from './content/content.component';
 import {MatCardModule} from '@angular/material/card';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
-
+import {MatTabsModule} from '@angular/material/tabs';
 
 @NgModule({
   declarations: [
@@ -29,7 +29,8 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
     MatIconModule,
     MatListModule,
     MatCardModule,
-    AngularFontAwesomeModule
+    AngularFontAwesomeModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
