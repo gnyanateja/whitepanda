@@ -7,14 +7,14 @@
   padding-left: 7%;
   padding-top: 5%;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 38px;
+  font-size: 35px;
 
 }
 
 .text-description{
   position: relative;
-  padding-left: 7%;
-  padding-top: 3%;
+  padding-left: 6.5%;
+  padding-top: 2.5%;
   font-family: Arial, Helvetica, sans-serif;
   width: 80%;
 
@@ -29,12 +29,12 @@
 
 
 #color-blue{
-  font-size: 100%;
+  font-size: 90%;
   color: rgb(60, 185, 185);
 }
 
 #light-color{
-  font-size: 80%;
+  font-size: 70%;
   color: rgb(147, 151, 151);
 
 }
@@ -45,11 +45,11 @@
 }
 
 #button0{
-  font-size: 80%;
+  font-size: 70%;
 }
 
 #button1{
-  font-size: 80%;
+  font-size: 70%;
   width: 30%;
 }
 
@@ -67,6 +67,10 @@ mat-card{
   background-color: rgb(253, 253, 253);
 }
 
+
+.mat-card-title{
+  font-size: 90%;
+}
 
 
 
@@ -88,14 +92,14 @@ mat-card{
 
 
 mat-card-content{
-  font-size: 17px;
+  font-size: 14px;
   color: rgb(147, 151, 151);
 }
 
 
 
 mat-card-subtitle{
-  font-size: 18px;
+  font-size: 15px;
   color: rgb(75, 73, 73);
 }
 
@@ -106,7 +110,7 @@ mat-card-subtitle{
 .social{
   text-align: center;
   color: rgb(147, 151, 151);
-  font-size: 90%;
+  font-size: 80%;
 
 }
 

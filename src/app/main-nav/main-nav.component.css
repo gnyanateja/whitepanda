@@ -39,13 +39,13 @@ img{
 
 #active{
   position: relative;
-  left: 54%;
+  left: 53%;
   padding-right: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
   border-right: 4px solid rgb(60, 185, 185);
-  width: 55px;
-  height: 65px;
+  width: 52px;
+  height: 60px;
 
 }
 
@@ -55,8 +55,8 @@ img{
   padding-right: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
-  width: 52px;
-  height: 65px;
+  width: 47px;
+  height: 60px;
 
 }
 
@@ -69,7 +69,7 @@ img{
 
 
 #bell{
-  font-size: 27px;
+  font-size: 25px;
   color: black;
 }
 
@@ -78,7 +78,7 @@ img{
   top: -10px;
   right: 12px;
   padding: 6px 6px;
-  font-size: 50%;
+  font-size: 35%;
   border-radius: 50%;
   background: rgb(243, 109, 109);
   color: white;
