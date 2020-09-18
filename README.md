@@ -19,3 +19,20 @@ A boolean value 'onlyFirebase' needs to be provided as parameter while using thi
 
 'onlyFirebase'  - true  - Only Firebase Cloud Messaging is used for push notifications
 'onlyFirebase'  - false - Both CleverTap and Firebase Cloud Messaging can be used for push notifications
+
+## InApp notifications
+
+## Ads
+
+## Dynamic Linking
+
+Add the following import statement to the top of your file  
+
+```
+import com.appyhigh.mylibrary.share.ShareDynamicLink
+
+```
+
+
+## Apxor Events
+
