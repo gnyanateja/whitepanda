@@ -42,14 +42,47 @@ Add the following import statement to the top of your file
 import com.appyhigh.mylibrary.ads.AdUtils
 
 ```
-1.Add the following lines inside the application tag in *AndroidManifest.xml* file
+Add the following lines inside the application tag in *AndroidManifest.xml* file
 ```
 <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-3940256099942544~3347511713"/>
 
 ```
-2.
+### Interstitial Ads
+
+1.To add a new Interstitial Ad, call the *newInterstitialAd* method as shown
+
+```
+newInterstitialAd(ad_unit: String,activity: AppCompatActivity,screen: String, closeListener: AdCloseListener): InterstitialAd
+
+return type : InterstitialAd
+
+params:
+ad_unit       - String,
+activity      - AppCompatActivity,
+screen        - String,
+closeListener - AdCloseListener
+
+```
+2.To load an Interstitial Ad, call the *loadInterstitial* method as shown
+
+```
+loadInterstitial(mInterstitialAd: InterstitialAd)
+
+params:
+mInterstitialAd - InterstitialAd
+
+```
+3.To try to load the add once again, call the *tryToLoadAdOnceAgain* method as shown
+```
+tryToLoadAdOnceAgain(ad_unit: String, activity: AppCompatActivity, listener: AdCloseListener)
+
+params:
+ad_unit       - String,
+activity      - AppCompatActivity,
+listener      - AdCloseListener
+```
 
 ## Dynamic Linking
 
@@ -77,19 +110,24 @@ import com.appyhigh.mylibrary.share.ShareDynamicLink
 3. To create and share dynamic links that opens the link on your app, call the *createShortLink* method as shown
 ```
 createShortLink(link: String, domain: String, packageName: String?, linkMessage: String, context: Context)
+
 params:
 link        - deepLink of your project
 domain      - domainLink of your project which you already created on the linked firebase account
 packageName - packageName of your project
 linkMessage - extra message that you want while sharing your link
-context     - current state of application/object
+context     - Context
 
 ```
 
 4. To receive the deep link, call the *getDynamicLink* method as shown
 ```
 getDynamicLink(intent: Intent):Uri?
+
 return type : Uri
+
+params:
+intent      - Intent
 ```
   
 
