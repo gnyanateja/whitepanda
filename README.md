@@ -79,6 +79,8 @@ mInterstitialAd - InterstitialAd
 ```
 
 ### Native Ads
+
+#### Template Native Ad
 1.Add the following lines inside the layout of a particular activity
 ```
 <com.appyhigh.mylibrary.ads.TemplateView
@@ -96,6 +98,17 @@ params:
 context       - Context,
 applicationId - String,
 templateView  - TemplateView,
+screen        - String
+```
+#### UnifiedNativeAd
+1.To load the Unified Native Ad, call the *loadUnifiedNativeAd* method as shown
+```
+loadUnifiedNativeAd(context: Context, applicationId: String, nativeAdArea: LinearLayout, screen: String)
+
+params:
+context       - Context,
+applicationId - String,
+nativeAdArea  - LinearLayout,
 screen        - String
 ```
 
