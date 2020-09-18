@@ -24,12 +24,7 @@ A boolean value 'onlyFirebase' needs to be provided as parameter while using thi
 
 CleverTap and Firebase can be used for push notifications in this library.
 
-Add the following import statement to the top of your file  
 
-```
-import com.appyhigh.mylibrary.push.MyFirebaseMessaging
-
-```
 
 
 ## InApp Notifications (CleverTap and Firebase)
@@ -40,12 +35,6 @@ Add the following lines to your app level build.gradle file.
 ```
 implementation 'com.github.PrasadVennamAppy:AppyhighUtils:{latestVersion}
 implementation 'com.google.android.gms:play-services-ads:{latestVersion}
-
-```
-Add the following import statement to the top of your file  
-
-```
-import com.appyhigh.mylibrary.ads.AdUtils
 
 ```
 Add the following lines inside the application tag in *AndroidManifest.xml* file
@@ -122,12 +111,6 @@ screen        - String
 
 ## Dynamic Linking
 
-Add the following import statement to the top of your file  
-
-```
-import com.appyhigh.mylibrary.share.ShareDynamicLink
-
-```
 1. Create a Domain Link in your linked firebase account to use Dynamic Linking
 
 2. To receive Dynamic Links, add the following intent-filter to your *AndroidManifest.xml* file
