@@ -36,6 +36,12 @@ import com.appyhigh.mylibrary.push.MyFirebaseMessaging
 
 ## Ads (Interstitial and Native)
 
+Add the following lines to your app level build.gradle file.
+```
+implementation 'com.github.PrasadVennamAppy:AppyhighUtils:{latestVersion}
+implementation 'com.google.android.gms:play-services-ads:{latestVersion}
+
+```
 Add the following import statement to the top of your file  
 
 ```
