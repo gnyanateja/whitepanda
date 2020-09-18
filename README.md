@@ -36,6 +36,21 @@ import com.appyhigh.mylibrary.push.MyFirebaseMessaging
 
 ## Ads (Interstitial and Native)
 
+Add the following import statement to the top of your file  
+
+```
+import com.appyhigh.mylibrary.ads.AdUtils
+
+```
+1.Add the following lines inside the application tag in *AndroidManifest.xml* file
+```
+<meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713"/>
+
+```
+2.
+
 ## Dynamic Linking
 
 Add the following import statement to the top of your file  
@@ -54,7 +69,7 @@ import com.appyhigh.mylibrary.share.ShareDynamicLink
     <category android:name="android.intent.category.DEFAULT"/>
     <category android:name="android.intent.category.BROWSABLE"/>
     <data
-        android:host="example.com"
+        android:host="your_domainLink"
         android:scheme="https"/>
 </intent-filter>
 ```
