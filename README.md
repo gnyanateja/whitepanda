@@ -60,12 +60,12 @@ Add the following lines inside the application tag in *AndroidManifest.xml* file
 1.To add a new Interstitial Ad, call the *newInterstitialAd* method as shown
 
 ```
-newInterstitialAd(ad_unit: String,activity: AppCompatActivity,screen: String, closeListener: AdCloseListener): InterstitialAd
+newInterstitialAd(applicationId: String,activity: AppCompatActivity,screen: String, closeListener: AdCloseListener): InterstitialAd
 
 return type : InterstitialAd
 
 params:
-ad_unit       - String,
+applicationId - String,
 activity      - AppCompatActivity,
 screen        - String,
 closeListener - AdCloseListener
@@ -82,10 +82,10 @@ mInterstitialAd - InterstitialAd
 ```
 3.To try to load the add once again, call the *tryToLoadAdOnceAgain* method as shown
 ```
-tryToLoadAdOnceAgain(ad_unit: String, activity: AppCompatActivity, listener: AdCloseListener)
+tryToLoadAdOnceAgain(applicationId: String, activity: AppCompatActivity, listener: AdCloseListener)
 
 params:
-ad_unit       - String,
+applicationId - String,
 activity      - AppCompatActivity,
 listener      - AdCloseListener
 ```
