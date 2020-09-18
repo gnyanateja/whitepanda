@@ -87,11 +87,11 @@ listener      - AdCloseListener
 
 1.To load the template of Native Ad, call the *loadTemplateNativeAd* method as shown
 ```
-loadTemplateNativeAd(context: Context, id: String, templateView: TemplateView, screen: String)
+loadTemplateNativeAd(context: Context, applicationId: String, templateView: TemplateView, screen: String)
 
 params:
 context       - Context,
-id            - String,
+applicationId - String,
 templateView  - TemplateView,
 screen        - String
 ```
@@ -106,11 +106,11 @@ adView          - UnifiedNativeAdView
 ```
 3.To load the other Native Ad, call the *loadOtherAd* method as shown
 ```
-loadOtherAd(context: Context, id: String, nativeAdArea: LinearLayout, screen: String)
+loadOtherAd(context: Context, applicationId: String, nativeAdArea: LinearLayout, screen: String)
 
 params:
 context       - Context,
-id            - String,
+applicationId - String,
 nativeAdArea  - LinearLayout,
 screen        - String
 ```
