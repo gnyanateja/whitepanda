@@ -7,8 +7,8 @@ implementation 'com.github.PrasadVennamAppy:AppyhighUtils:{latestVersion}
 This library consists of following modules
 
     1)CleverTap Events
-    2)Push Notifications(CleverTap and Firebase)
-    3)InApp Notifications(CleverTap and Firebase)
+    2)Push Notifications (CleverTap and Firebase)
+    3)InApp Notifications (CleverTap and Firebase)
     4)Ads (Interstitial and Native)
     5)Dynamic Linking
     6)Apxor Events
@@ -20,7 +20,7 @@ A boolean value 'onlyFirebase' needs to be provided as parameter while using thi
 'onlyFirebase'  - true  - Only Firebase Cloud Messaging is used for events
 'onlyFirebase'  - false - Both CleverTap and Firebase Cloud Messaging can be used for events
 
-## Push Notifications
+## Push Notifications (CleverTap and Firebase)
 
 CleverTap and Firebase can be used for push notifications in this library.
 
@@ -32,9 +32,9 @@ import com.appyhigh.mylibrary.push.MyFirebaseMessaging
 ```
 
 
-## InApp Notifications
+## InApp Notifications (CleverTap and Firebase)
 
-## Ads
+## Ads (Interstitial and Native)
 
 ## Dynamic Linking
 
