@@ -85,7 +85,7 @@ listener      - AdCloseListener
 ```
 ### Native Ads
 
-1.To load the template of Native Ad, call the *tryToLoadAdOnceAgain* method as shown
+1.To load the template of Native Ad, call the *loadTemplateNativeAd* method as shown
 ```
 loadTemplateNativeAd(context: Context, id: String, templateView: TemplateView, screen: String)
 
