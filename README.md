@@ -44,8 +44,9 @@ Add the following import statement to the top of your file
 import com.appyhigh.mylibrary.share.ShareDynamicLink
 
 ```
+1. Create a Domain Link in your linked firebase account to use Dynamic Linking
 
-1. To receive Dynamic Links, add the following intent-filter to your *AndroidManifest.xml* file
+2. To receive Dynamic Links, add the following intent-filter to your *AndroidManifest.xml* file
 
 ```
 <intent-filter>
@@ -58,12 +59,12 @@ import com.appyhigh.mylibrary.share.ShareDynamicLink
 </intent-filter>
 ```
 
-2. To create and share dynamic links that opens the link on your app, call the *createShortLink* method as shown
+3. To create and share dynamic links that opens the link on your app, call the *createShortLink* method as shown
 ```
 createShortLink(link: String, domain: String, packageName: String?, linkMessage: String, context: Context)
 params:
-link        - deepLink
-domain      - domainLink
+link        - deepLink of your project
+domain      - domainLink of your project which you already created on the linked firebase account
 packageName - packageName of your project
 linkMessage - extra message that you want while sharing your link
 context     - current state of application/object
