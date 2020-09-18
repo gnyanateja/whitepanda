@@ -49,12 +49,12 @@ Add the following lines inside the application tag in *AndroidManifest.xml* file
 1.To create a new Interstitial Ad, call the *newInterstitialAd* method as shown
 
 ```
-newInterstitialAd(applicationId: String,activity: AppCompatActivity,screen: String, closeListener: AdCloseListener): InterstitialAd
+newInterstitialAd(adId: String,activity: AppCompatActivity,screen: String, closeListener: AdCloseListener): InterstitialAd
 
 return type : InterstitialAd
 
 params:
-applicationId - String,
+adId          - String,
 activity      - AppCompatActivity,
 screen        - String,
 closeListener - AdCloseListener
@@ -80,8 +80,8 @@ mInterstitialAd - InterstitialAd
 
 ### Native Ads
 
-#### Template Native Ad
-1.Add the following lines inside the layout of a particular activity
+#### Template Native Ad of corresponding activity/fragment
+1.Add the following lines inside the layout of a corresponding activity/fragment
 ```
 <com.appyhigh.mylibrary.ads.TemplateView
         android:id="@+id/template_ad_small"
@@ -92,22 +92,22 @@ mInterstitialAd - InterstitialAd
 
 2.To load the template of Native Ad, call the *loadTemplateNativeAd* method as shown
 ```
-loadTemplateNativeAd(context: Context, applicationId: String, templateView: TemplateView, screen: String)
+loadTemplateNativeAd(context: Context, adId: String, templateView: TemplateView, screen: String)
 
 params:
 context       - Context,
-applicationId - String,
+adId          - String,
 templateView  - TemplateView,
 screen        - String
 ```
 #### UnifiedNativeAd
 1.To load the Unified Native Ad, call the *loadUnifiedNativeAd* method as shown
 ```
-loadUnifiedNativeAd(context: Context, applicationId: String, nativeAdArea: LinearLayout, screen: String)
+loadUnifiedNativeAd(context: Context, adId: String, nativeAdArea: LinearLayout, screen: String)
 
 params:
 context       - Context,
-applicationId - String,
+adId          - String,
 nativeAdArea  - LinearLayout,
 screen        - String
 ```
