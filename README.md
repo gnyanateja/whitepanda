@@ -46,7 +46,7 @@ Add the following lines inside the application tag in *AndroidManifest.xml* file
 ```
 ### Interstitial Ads
 
-1.To add a new Interstitial Ad, call the *newInterstitialAd* method as shown
+1.To create a new Interstitial Ad, call the *newInterstitialAd* method as shown
 
 ```
 newInterstitialAd(applicationId: String,activity: AppCompatActivity,screen: String, closeListener: AdCloseListener): InterstitialAd
@@ -69,17 +69,17 @@ params:
 mInterstitialAd - InterstitialAd
 
 ```
-3.To try to load the add once again, call the *tryToLoadAdOnceAgain* method as shown
+#### Example
 ```
-tryToLoadAdOnceAgain(applicationId: String, activity: AppCompatActivity, listener: AdCloseListener)
+ ad = newInterstitialAd(resources.getString(R.string.test_interstitial),this@MainActivity, "app_exit", this)
+ loadInterstitial(ad)
+ if (ad.isLoaded) {
+    ad.show()
+  }
+```
 
-params:
-applicationId - String,
-activity      - AppCompatActivity,
-listener      - AdCloseListener
-```
 ### Native Ads
-1.Add the following lines inside the application tag in *AndroidManifest.xml* file
+1.Add the following lines inside the layout of a particular activity
 ```
 <com.appyhigh.mylibrary.ads.TemplateView
         android:id="@+id/template_ad_small"
@@ -96,16 +96,6 @@ params:
 context       - Context,
 applicationId - String,
 templateView  - TemplateView,
-screen        - String
-```
-3.To load the other Native Ad, call the *loadOtherAd* method as shown
-```
-loadOtherAd(context: Context, applicationId: String, nativeAdArea: LinearLayout, screen: String)
-
-params:
-context       - Context,
-applicationId - String,
-nativeAdArea  - LinearLayout,
 screen        - String
 ```
 
