@@ -83,6 +83,37 @@ ad_unit       - String,
 activity      - AppCompatActivity,
 listener      - AdCloseListener
 ```
+### Native Ads
+
+1.To load the template of Native Ad, call the *tryToLoadAdOnceAgain* method as shown
+```
+loadTemplateNativeAd(context: Context, id: String, templateView: TemplateView, screen: String)
+
+params:
+context       - Context,
+id            - String,
+templateView  - TemplateView,
+screen        - String
+```
+2.To populate the unifiedNative Ad, call the *unifiedNativeAd* method as shown
+```
+populateUnifiedNativeAdView(unifiedNativeAd: UnifiedNativeAd, adView: UnifiedNativeAdView)
+
+params:
+unifiedNativeAd - UnifiedNativeAd,
+adView          - UnifiedNativeAdView
+
+```
+3.To load the other Native Ad, call the *loadOtherAd* method as shown
+```
+loadOtherAd(context: Context, id: String, nativeAdArea: LinearLayout, screen: String)
+
+params:
+context       - Context,
+id            - String,
+nativeAdArea  - LinearLayout,
+screen        - String
+```
 
 ## Dynamic Linking
 
